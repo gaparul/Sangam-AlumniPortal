@@ -1,12 +1,36 @@
 pipeline {
   agent any
 
+  tools {nodejs "nodejs"}
+    environment {
+        CI = 'true'
+        registry = 'gaparul/sangam-alumniportal'
+        DOCKERHUB_CRED = credentials('CRED_DOCKER')
+        registryCredential = 'CRED_DOCKER'
+        dockerimage = ''
+    }
+
   stages {
     stage('Git Pull') {
         steps {
             git url: 'https://github.com/gaparul/Sangam-AlumniPortal.git', branch: 'master',
             credentialsId: 'Credential_Git'
         }
+    }
+
+    stage('Build and Push Frontend Docker Image') {
+      environment {
+        IMAGE_NAME = ''
+      }
+      steps {
+        script{
+            // docker = sh '/usr/local/bin/docker'
+            // dockerimage = docker.build registry + ":latest"
+            dir('frontend') {
+                dockerimage = sh '/usr/local/bin/docker build -t '+registry+':latest .'
+            }
+        }
+      }
     }
 
   }
