@@ -9,6 +9,7 @@ COPY package.json .
 
 RUN npm install -g node-gyp
 # Install the dependencies
+RUN python --version
 RUN npm install
 
 # Copy the rest of the backend code to the container
