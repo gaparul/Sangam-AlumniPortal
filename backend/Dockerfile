@@ -1,6 +1,6 @@
 # Use the base image with Node.js installed
 FROM node:14-alpine
-
+RUN apk add g++ make py3-pip
 # Set the working directory to /backend
 WORKDIR /backend
 
