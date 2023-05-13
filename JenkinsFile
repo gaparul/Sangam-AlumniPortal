@@ -4,7 +4,8 @@ pipeline {
   tools {nodejs "nodejs"}
     environment {
         CI = 'true'
-        registry = 'gaparul/sangam-alumniportal'
+        registryfrontend = 'sangam-alumniportal-frontend'
+        registrybackend = 'gaparul/sangam-alumniportal-backend'
         DOCKERHUB_CRED = credentials('CRED_DOCKER')
         registryCredential = 'CRED_DOCKER'
         dockerimage = ''
@@ -27,7 +28,22 @@ pipeline {
             // docker = sh '/usr/local/bin/docker'
             // dockerimage = docker.build registry + ":latest"
             dir('frontend') {
-                dockerimage = sh '/usr/local/bin/docker build -t '+registry+':latest .'
+                dockerimage = sh '/usr/local/bin/docker build -t '+registryfrontend+':latest .'
+            }
+        }
+      }
+    }
+
+    stage('Build and Push Backend Docker Image') {
+      environment {
+        IMAGE_NAME = ''
+      }
+      steps {
+        script{
+            // docker = sh '/usr/local/bin/docker'
+            // dockerimage = docker.build registry + ":latest"
+            dir('backend') {
+                dockerimage = sh '/usr/local/bin/docker build -t '+registrybackend+':latest .'
             }
         }
       }
