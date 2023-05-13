@@ -1,0 +1,10 @@
+pipeline {
+  agent any
+
+  stages {
+    steps {
+        git url: 'https://github.com/gaparul/Sangam-AlumniPortal.git', branch: 'master',
+        credentialsId: 'Credential_Git'
+    }
+  }
+}
