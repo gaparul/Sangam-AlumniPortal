@@ -32,7 +32,7 @@ export const GlobalProvider = ({ children }) => {
 		avatar: "https://avatars.githubusercontent.com/u/81064287?v=4",
 	});
 	const axiosInstance = axios.create({
-		baseURL: "http://localhost:5000/",
+		baseURL: "http://localhost:8082/",
 	});
 	return (
 		<GlobalContext.Provider
