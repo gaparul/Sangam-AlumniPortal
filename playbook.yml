@@ -7,11 +7,18 @@
     #     name: docker
     #     state: started
 
-    - name: pull frontend docker image
-      shell: /usr/local/bin/docker pull docker.io/gaparul/sangam-alumniportal-frontend:latest
+    # - name: pull frontend docker image
+    #   shell: /usr/local/bin/docker pull docker.io/gaparul/sangam-alumniportal-frontend:latest
 
-    - name: pull backend docker image
-      shell: /usr/local/bin/docker pull docker.io/gaparul/sangam-alumniportal-backend:latest
+    # - name: pull backend docker image
+    #   shell: /usr/local/bin/docker pull docker.io/gaparul/sangam-alumniportal-backend:latest
+
+    # - name: Copy Docker Compose file from host machine
+    #   copy:
+    #     src: ./docker-compose.yml
+    #     dest: /Users/harsh/Desktop/Sangam-AlumniPortal/docker-compose.yml
+    - name:
+      shell: docker-compose -f docker-compose.yml up
 
     # - name: Pull Frontend image
     #   docker_image:
