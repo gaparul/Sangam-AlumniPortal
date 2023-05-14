@@ -25,8 +25,8 @@
         src: ./docker-compose.yml
         dest: /Users/harsh/Desktop/Sangam-AlumniPortal/docker-compose.yml
     
-    # - name: deploy docker compose
-    #   shell: /usr/local/bin/docker-compose -f ./docker-compose.yml up -d
+    - name: deploy docker compose
+      shell: /usr/local/bin/docker-compose -f ./docker-compose.yml up -d
 
     # - name: Pull Frontend image
     #   docker_image:
