@@ -7,8 +7,11 @@
     #     name: docker
     #     state: started
 
-    - name: pull docker image
+    - name: pull frontend docker image
       shell: /usr/local/bin/docker pull docker.io/gaparul/sangam-alumniportal-frontend:latest
+
+    - name: pull backend docker image
+      shell: /usr/local/bin/docker pull docker.io/gaparul/sangam-alumniportal-backend:latest
 
     # - name: Pull Frontend image
     #   docker_image:
