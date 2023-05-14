@@ -75,7 +75,7 @@ pipeline {
         steps {
             script{
                 dir('backend') {
-                    sh '/usr/local/bin/docker login -u "gaparul" -p "Parul@191210"'
+                    sh '/usr/local/bin/docker login -u '+DOCKERHUB_CRED_USR+' -p '+DOCKERHUB_CRED_PSW
                     sh '/usr/local/bin/docker push ' +registrybackend+':latest'
                 }
                 
