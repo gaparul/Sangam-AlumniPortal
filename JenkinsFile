@@ -19,7 +19,7 @@ pipeline {
         }
     }
 
-    stage('Build and Push Frontend Docker Image') {
+    stage('Build Frontend Docker Image') {
       environment {
         IMAGE_NAME = ''
       }
@@ -34,7 +34,20 @@ pipeline {
       }
     }
 
-    stage('Build and Push Backend Docker Image') {
+    stage('Push Frontend Image to dockerHub') {
+        steps {
+            script{
+                dir('frontend') {
+                    sh '/usr/local/bin/docker login -u "gaparul" -p "Parul@191210"'
+                    sh '/usr/local/bin/docker push ' +registryfrontend+':latest'
+                }
+                
+            }
+            
+        }
+    }
+
+    stage('Build Backend Docker Image') {
       environment {
         IMAGE_NAME = ''
       }
@@ -47,6 +60,19 @@ pipeline {
             }
         }
       }
+    }
+
+    stage('Push Backend Image to dockerHub') {
+        steps {
+            script{
+                dir('frontend') {
+                    sh '/usr/local/bin/docker login -u "gaparul" -p "Parul@191210"'
+                    sh '/usr/local/bin/docker push ' +registrybackend+':latest'
+                }
+                
+            }
+            
+        }
     }
 
     stage('Deploy') {
