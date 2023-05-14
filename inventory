@@ -1,0 +1,2 @@
+[mac]
+harsh ansible_connection=local

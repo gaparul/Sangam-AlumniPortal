@@ -1,0 +1,12 @@
+---
+- name: Deploying Project.
+  hosts: all
+  tasks:
+    - name: Pull Frontend image
+      docker_image:
+        name: gaparul/sangam-alumniportal-frontend
+        source: pull
+    - name: Pull Backend image
+      docker_image:
+        name: gaparul/sangam-alumniportal-backend
+        source: pull
