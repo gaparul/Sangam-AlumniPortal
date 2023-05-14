@@ -2,13 +2,13 @@
 - name: Deploying Project.
   hosts: localhost
   tasks:
-    - name: Start docker service
-      service:
-        name: docker
-        state: started
+    # - name: Start docker service
+    #   service:
+    #     name: docker
+    #     state: started
 
     - name: pull docker image
-      shell: docker pull docker.io/gaparul/sangam-alumniportal-frontend:latest
+      shell: /usr/local/bin/docker pull docker.io/gaparul/sangam-alumniportal-frontend:latest
 
     # - name: Pull Frontend image
     #   docker_image:
