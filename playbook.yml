@@ -24,9 +24,13 @@
       copy:
         src: ./docker-compose.yml
         dest: /Users/harsh/Desktop/Sangam-AlumniPortal/docker-compose.yml
-    
-    - name: deploy docker compose
-      shell: /usr/local/bin/docker-compose -f /Users/harsh/Desktop/Sangam-AlumniPortal/docker-compose.yml up -d
+
+    # use files parameter to use multiple docker-compose.yml files
+    - name: deploy Docker Compose stack
+      community.docker.docker_compose:
+        project_src: /Users/harsh/Desktop/Sangam-AlumniPortal
+        files:
+        - docker-compose.yml
 
     # - name: Pull Frontend image
     #   docker_image:
