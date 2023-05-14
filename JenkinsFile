@@ -47,7 +47,7 @@ pipeline {
         }
     }
 
-    stage('Free local space') {
+    stage('Free frontend local space') {
         steps {
             dir('frontend') {
                 sh '/usr/local/bin/docker rmi '+registryfrontend+':latest'
@@ -84,10 +84,10 @@ pipeline {
         }
     }
 
-    stage('Free local space') {
+    stage('Free backend local space') {
         steps {
-            dir('frontend') {
-                sh '/usr/local/bin/docker rmi '+registryfrontend+':latest'
+            dir('backend') {
+                sh '/usr/local/bin/docker rmi '+registrybackend+':latest'
             }
         }
     }
