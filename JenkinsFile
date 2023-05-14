@@ -47,6 +47,14 @@ pipeline {
         }
     }
 
+    stage('Free local space') {
+        steps {
+            dir('frontend') {
+                sh '/usr/local/bin/docker rmi '+registryfrontend+':latest'
+            }
+        }
+    }
+
     stage('Build Backend Docker Image') {
       environment {
         IMAGE_NAME = ''
@@ -62,6 +70,7 @@ pipeline {
       }
     }
 
+
     stage('Push Backend Image to dockerHub') {
         steps {
             script{
@@ -72,6 +81,14 @@ pipeline {
                 
             }
             
+        }
+    }
+
+    stage('Free local space') {
+        steps {
+            dir('frontend') {
+                sh '/usr/local/bin/docker rmi '+registryfrontend+':latest'
+            }
         }
     }
 
