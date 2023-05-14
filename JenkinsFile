@@ -38,7 +38,7 @@ pipeline {
         steps {
             script{
                 dir('frontend') {
-                    sh '/usr/local/bin/docker login -u "gaparul" -p "Parul@191210"'
+                    sh '/usr/local/bin/docker login -u "gaparul" -p '+DOCKERHUB_CRED+ ''
                     sh '/usr/local/bin/docker push ' +registryfrontend+':latest'
                 }
                 
