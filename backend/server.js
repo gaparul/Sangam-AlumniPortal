@@ -3,6 +3,7 @@ const bodyParser=require("body-parser");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
+const logger = require('../backend/logger');
 
 const app = express();
 
@@ -27,9 +28,9 @@ mongoose.connect(
   { useNewUrlParser: true, useUnifiedTopology: true },
   function (err) {
     if (err) {
-      console.log(err);
+      logger.error(err);
     } else {
-      console.log("Database Connected");
+      logger.info("Database Connected");
     }
   }
 );
@@ -46,5 +47,5 @@ app.use("/api/admin",admin);
 
 
 app.listen(process.env.PORT, () => {
-  console.log("Server started at port " + process.env.PORT);
+  logger.info("Server started at port " + process.env.PORT);
 });

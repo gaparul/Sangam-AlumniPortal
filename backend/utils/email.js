@@ -3,6 +3,8 @@ const { google } = require("googleapis");
 const OAuth2 = google.auth.OAuth2;
 const dotenv = require("dotenv");
 const { myOAuth2Client } = require("./google");
+const logger = require('../logger');
+
 dotenv.config();
 
 const sendEmail = (to, sub, htmlContent) => {
@@ -37,7 +39,7 @@ const sendEmail = (to, sub, htmlContent) => {
       console.error(err);
     } else {
       transport.close();
-      console.log(result);
+      logger.info(result);
     }
   });
 };

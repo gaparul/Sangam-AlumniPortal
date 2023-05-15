@@ -4,6 +4,7 @@ import Button from "../../components/Button/Button";
 import Chip from "../../components/Chip/Chip";
 import "./register.css";
 
+
 const Register = () => {
 	const navigate = useNavigate();
 	const [user, setUser] = useState({

@@ -3,6 +3,7 @@ const User = require("../models/user");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { sendEmail } = require("../utils/email");
+const logger = require('../logger');
 
 const { createFolder } = require("../utils/drive");
 const PDetails = require("../models/personaldetails");
@@ -28,7 +29,7 @@ exports.register = async (req, res) => {
     const newUser = new User(req.body);
     await newUser.save(async(err, savedUser) => {
       if (err) {
-        console.log(err);
+        logger.error(err);
         return res.status(500).json({ errors: [{ message: "server error" }] });
       } else {
         const link = `${process.env.URL}api/auth/verifyemail/${
@@ -36,7 +37,7 @@ exports.register = async (req, res) => {
         }/${savedUser._id.toHexString()}`;
         
         const response =await createFolder(savedUser._id.toHexString());
-       console.log(response.id);
+       logger.info(response.id);
         if(response.id){
           const user=await User.updateOne({email:savedUser.email},{folderLink:response.id});
           if(!user){
@@ -56,7 +57,7 @@ exports.register = async (req, res) => {
       }
     });
   } catch (err) {
-    console.log(err);
+    logger.error(err);
     return res.status(500).json({ errors: [{ message: "server error" }] });
   }
 };
@@ -80,7 +81,7 @@ exports.login = async (req, res) => {
           if (checkUser.profileExists) {
             if (checkUser.adminverification) {
               const { password, ...others } = checkUser._doc;
-              console.log(others);
+              logger.info(others);
               const token = jwt.sign(
                 { uid: checkUser._id.toHexString() },
                 process.env.JWT_SECRET,
@@ -94,7 +95,7 @@ exports.login = async (req, res) => {
             }
           } else {
             const { password, ...others } = checkUser._doc;
-            console.log(others);
+            logger.info(others);
             const token = jwt.sign(
               { uid: checkUser._id.toHexString() },
               process.env.JWT_SECRET,
@@ -118,7 +119,7 @@ exports.login = async (req, res) => {
         .json({ errors: [{ message: "Invalid Credentials" }] });
     }
   } catch (err) {
-    console.log(err);
+    logger.error(err);
     return res.status(500).json({ errors: [{ message: "server error" }] });
   }
 };
@@ -150,7 +151,7 @@ exports.verifyEmail = async (req, res) => {
       }
     }PersonalDetailsSchema
   } catch (err) {
-    console.log(err);
+    logger.error(err);
     return res.status(500).json({ errors: [{ message: "server error" }] });
   }
 };
@@ -175,7 +176,7 @@ exports.personalDetails=async (req,res)=>{
     };
     const newUser = new PDetails(data); 
     const result=await newUser.save();
-    console.log(result)
+    logger.info(result)
     if(result){
       await User.updateOne({_id:req.user},{profileExists:true},(err)=>{
         if(err){

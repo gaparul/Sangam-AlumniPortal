@@ -1,5 +1,7 @@
 const jwt = require("jsonwebtoken");
 const User = require("../models/user");
+const logger = require('../logger');
+
 exports.checkAuth = (req, res, next) => {
   const authtkn = req.header("x-auth-token");
 
@@ -10,7 +12,7 @@ exports.checkAuth = (req, res, next) => {
   }
   try {
     let decoded = jwt.verify(authtkn, process.env.JWT_SECRET);
-    console.log(decoded.uid);
+    logger.info(decoded.uid);
     req.user = decoded.uid;
   } catch (error) {
     return res
