@@ -16,7 +16,7 @@ const Dashboard = () => {
 				name: "Parul Ghotikar",
 				email: "gaparul@gmail.com",
 				username: "parul",
-				avatar: "https://avatars.githubusercontent.com/u/84612609?v=4",
+				avatar: "https://avatars.githubusercontent.com/u/84612610?v=4",
 			},
 			likes: {
 				status: true,
@@ -30,7 +30,7 @@ const Dashboard = () => {
 						name: "Sakshi Soni",
 						email: "sakshisoni61000@gmail.com",
 						username: "sakshisoni",
-						avatar: "https://avatars.githubusercontent.com/u/84612609?v=4",
+						avatar: "https://avatars.githubusercontent.com/u/84612610?v=4",
 					},
 					time: "Fri Apr 15 2022 16:35:00 GMT+0530 (India Standard Time)",
 					likes: {
@@ -48,7 +48,7 @@ const Dashboard = () => {
 				name: "Parul G",
 				email: "parul@gmail.com",
 				username: "parulg",
-				avatar: "https://avatars.githubusercontent.com/u/76739180?v=4",
+				avatar: "https://avatars.githubusercontent.com/u/84612610?v=4",
 			},
 			likes: {
 				status: false,
@@ -62,7 +62,7 @@ const Dashboard = () => {
 						name: "Sakshi Soni",
 						email: "sakshisoni61000@gmail.com",
 						username: "sakshisoni",
-						avatar: "https://avatars.githubusercontent.com/u/84612609?v=4",
+						avatar: "https://avatars.githubusercontent.com/u/84612610?v=4",
 					},
 					time: "Fri Apr 15 2022 16:35:00 GMT+0530 (India Standard Time)",
 					likes: {
@@ -77,7 +77,7 @@ const Dashboard = () => {
 						name: "Sakshi",
 						email: "sakshisoni@gmail.com",
 						username: "sakshiiii",
-						avatar: "https://avatars.githubusercontent.com/u/81064287?v=4",
+						avatar: "https://avatars.githubusercontent.com/u/84612610?v=4",
 					},
 					time: "Fri Apr 15 2022 16:35:00 GMT+0530 (India Standard Time)",
 					likes: {
@@ -95,7 +95,7 @@ const Dashboard = () => {
 				name: "Shukla",
 				email: "shukla@gmail.com",
 				username: "shukla",
-				avatar: "https://avatars.githubusercontent.com/u/84612609?v=4",
+				avatar: "https://avatars.githubusercontent.com/u/84612610?v=4",
 			},
 			likes: {
 				status: false,
@@ -109,7 +109,7 @@ const Dashboard = () => {
 						name: "Sakshi Soni",
 						email: "sakshisoni61000@gmail.com",
 						username: "sakshisoni",
-						avatar: "https://avatars.githubusercontent.com/u/84612609?v=4",
+						avatar: "https://avatars.githubusercontent.com/u/84612610?v=4",
 					},
 					time: "Fri Apr 15 2022 16:35:00 GMT+0530 (India Standard Time)",
 					likes: {
