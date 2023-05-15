@@ -13,9 +13,9 @@ const Dashboard = () => {
 			content:
 				"whenever i feel sad, it pretty much always turns out that i’m either hungry, dehydrated, sleep-deprived, or having a deep existential crisis!",
 			author: {
-				name: "Akshat Mittal",
-				email: "akshatmittal2506@gmail.com",
-				username: "akshatmittal61",
+				name: "Parul Ghotikar",
+				email: "gaparul@gmail.com",
+				username: "parul",
 				avatar: "https://avatars.githubusercontent.com/u/84612609?v=4",
 			},
 			likes: {
@@ -27,9 +27,9 @@ const Dashboard = () => {
 					id: "656asdc6a",
 					content: "It was a good one",
 					author: {
-						name: "Akshat Mittal",
-						email: "akshatmittal2506@gmail.com",
-						username: "akshatmittal61",
+						name: "Sakshi Soni",
+						email: "sakshisoni61000@gmail.com",
+						username: "sakshisoni",
 						avatar: "https://avatars.githubusercontent.com/u/84612609?v=4",
 					},
 					time: "Fri Apr 15 2022 16:35:00 GMT+0530 (India Standard Time)",
@@ -45,9 +45,9 @@ const Dashboard = () => {
 			content:
 				"whenever i feel sad, it pretty much always tuhenever i feel sad, it pretty much always tuhenever i feel sad, it pretty much always turns out that i’m either hungry, dehydrated, sleep-deprived, or having a deep existential crisis!",
 			author: {
-				name: "Akshat Khosya",
-				email: "akshatdps12@gmail.com",
-				username: "akshat-khosya",
+				name: "Parul G",
+				email: "parul@gmail.com",
+				username: "parulg",
 				avatar: "https://avatars.githubusercontent.com/u/76739180?v=4",
 			},
 			likes: {
@@ -59,9 +59,9 @@ const Dashboard = () => {
 					id: "656asdc6a",
 					content: "dkvjbdvbflab aca aacdkvjbdvbflab aca aacdkvjbdvbflab aca aacdkvjbdvbflab aca aacdkvjbdvbflab aca aacdkvjbdvbflab aca aacdkvjbdvbflab aca aacdkvjbdvbflab aca aacdkvjbdvbflab aca aacdkvjbdvbflab aca aacdkvjbdvbflab aca aac",
 					author: {
-						name: "Akshat Mittal",
-						email: "akshatmittal2506@gmail.com",
-						username: "akshatmittal61",
+						name: "Sakshi Soni",
+						email: "sakshisoni61000@gmail.com",
+						username: "sakshisoni",
 						avatar: "https://avatars.githubusercontent.com/u/84612609?v=4",
 					},
 					time: "Fri Apr 15 2022 16:35:00 GMT+0530 (India Standard Time)",
@@ -74,9 +74,9 @@ const Dashboard = () => {
 					id: "656assdvc6a",
 					content: "It was a good one",
 					author: {
-						name: "Shub",
-						email: "shubhamagarwal@gmail.com",
-						username: "am-shubhagarwal",
+						name: "Sakshi",
+						email: "sakshisoni@gmail.com",
+						username: "sakshiiii",
 						avatar: "https://avatars.githubusercontent.com/u/81064287?v=4",
 					},
 					time: "Fri Apr 15 2022 16:35:00 GMT+0530 (India Standard Time)",
@@ -92,9 +92,9 @@ const Dashboard = () => {
 			content:
 				"whenever i feel sad, it pretty much always turns out that i’m either hungry, dehydrated, sleep-deprived, or having a deep existential crisis!",
 			author: {
-				name: "Saurabh",
-				email: "saurabh@gmail.com",
-				username: "saurabh",
+				name: "Shukla",
+				email: "shukla@gmail.com",
+				username: "shukla",
 				avatar: "https://avatars.githubusercontent.com/u/84612609?v=4",
 			},
 			likes: {
@@ -106,9 +106,9 @@ const Dashboard = () => {
 					id: "656asdc6a",
 					content: "It was a good one",
 					author: {
-						name: "Akshat Mittal",
-						email: "akshatmittal2506@gmail.com",
-						username: "akshatmittal61",
+						name: "Sakshi Soni",
+						email: "sakshisoni61000@gmail.com",
+						username: "sakshisoni",
 						avatar: "https://avatars.githubusercontent.com/u/84612609?v=4",
 					},
 					time: "Fri Apr 15 2022 16:35:00 GMT+0530 (India Standard Time)",

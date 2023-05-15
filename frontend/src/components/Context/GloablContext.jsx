@@ -18,17 +18,17 @@ export const GlobalProvider = ({ children }) => {
 		breakpoint("mobile") || breakpoint("tab") ? false : true
 	);
 	const [user, setUser] = useState({
-		name: "Akshat Mittal",
+		name: "Sakshi Soni",
 		status: "Developing",
-		email: "akshatmittal2506@gmail.com",
+		email: "sakshisoni61000@gmail.com",
 		phone: 9456849466,
-		username: "akshatmittal61",
+		username: "sakshisoni",
 		batch: "2020",
 		bio: "MERN Stack developer",
 		currentOrganization: "MERN",
 		desgination: "MERN Stack Developer",
 		dob: "2002-06-25",
-		gender: "Male",
+		gender: "Female",
 		avatar: "https://avatars.githubusercontent.com/u/81064287?v=4",
 	});
 	const axiosInstance = axios.create({
