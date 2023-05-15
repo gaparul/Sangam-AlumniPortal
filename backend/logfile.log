@@ -1,0 +1,80 @@
+2023-05-14T09:00:13.029Z  info: LogIn Called
+2023-05-14T09:01:03.123Z  info: LogOut Called
+2023-05-14T09:03:01.903Z  info: LogIn Called
+2023-05-14T09:03:05.647Z  error: Wrong OTP
+2023-05-14T09:07:41.147Z  info: LogIn Called
+2023-05-14T09:08:53.870Z  info: Room is created
+2023-05-14T09:12:47.450Z  info: LogOut Called
+2023-05-14T09:12:53.876Z  info: LogIn Called
+2023-05-14T09:12:57.474Z  info: Successfully LoggedIn
+2023-05-14T09:15:30.962Z  error: Photos added
+2023-05-14T09:16:22.861Z  info: LogOut Called
+2023-05-14T09:47:28.801Z  info: LogIn Called
+2023-05-14T09:48:16.723Z  error: Wrong OTP
+2023-05-14T09:48:16.724Z  info: Successfully LoggedIn
+2023-05-14T09:50:58.613Z  info: LogIn Called
+2023-05-14T09:51:26.684Z  error: Wrong OTP
+2023-05-14T09:51:26.689Z  info: Successfully LoggedIn
+2023-05-14T09:52:52.763Z  info: LogIn Called
+2023-05-14T09:53:10.648Z  info: Successfully LoggedIn
+2023-05-14T09:57:01.693Z  info: LogIn Called
+2023-05-14T10:08:17.950Z  info: LogIn Called
+2023-05-14T10:51:12.844Z  info: LogIn Called
+2023-05-14T10:51:16.719Z  info: Successfully LoggedIn
+2023-05-14T11:00:21.427Z  info: LogIn Called
+2023-05-14T11:00:26.116Z  info: Successfully LoggedIn
+2023-05-14T11:02:38.991Z  info: Photo is added
+2023-05-14T11:02:55.681Z  info: Room is created
+2023-05-14T11:03:03.558Z  info: LogOut Called
+2023-05-14T11:03:11.530Z  info: LogIn Called
+2023-05-14T11:03:15.619Z  info: Successfully LoggedIn
+2023-05-14T11:05:23.578Z  info: Photo is added
+2023-05-14T11:06:12.302Z  info: Room is created
+2023-05-14T11:06:22.975Z  info: LogOut Called
+2023-05-14T11:06:48.532Z  info: LogIn Called
+2023-05-14T11:06:52.467Z  info: Successfully LoggedIn
+2023-05-14T11:08:05.693Z  info: Photo is added
+2023-05-14T11:08:21.099Z  info: Room is created
+2023-05-14T11:08:41.157Z  info: Room is created
+2023-05-14T11:09:18.321Z  info: LogOut Called
+2023-05-14T11:09:36.927Z  info: LogIn Called
+2023-05-14T11:09:42.657Z  info: Successfully LoggedIn
+2023-05-14T11:10:14.362Z  info: Photo is added
+2023-05-14T11:11:30.978Z  info: Room is created
+2023-05-14T11:12:07.511Z  info: LogOut Called
+2023-05-14T11:12:41.438Z  info: LogIn Called
+2023-05-14T11:12:45.750Z  info: Successfully LoggedIn
+2023-05-14T11:13:46.970Z  info: Photo is added
+2023-05-14T11:14:11.337Z  info: Room is created
+2023-05-14T11:14:23.734Z  info: LogOut Called
+2023-05-14T11:14:55.912Z  info: LogIn Called
+2023-05-14T11:14:59.579Z  info: Successfully LoggedIn
+2023-05-14T11:16:21.412Z  info: Photo is added
+2023-05-14T11:17:16.703Z  info: Room is created
+2023-05-14T11:17:33.542Z  info: LogOut Called
+2023-05-14T11:18:46.152Z  info: LogIn Called
+2023-05-14T11:18:50.009Z  info: Successfully LoggedIn
+2023-05-14T11:20:16.913Z  info: Photo is added
+2023-05-14T11:21:02.604Z  info: Room is created
+2023-05-14T11:30:23.280Z  info: LogOut Called
+2023-05-14T11:31:02.461Z  info: LogIn Called
+2023-05-14T11:31:07.816Z  info: Successfully LoggedIn
+2023-05-14T11:36:09.126Z  info: Photo is added
+2023-05-14T11:36:32.332Z  info: Room is created
+2023-05-14T11:36:41.087Z  info: LogOut Called
+2023-05-14T11:38:19.606Z  info: LogIn Called
+2023-05-14T11:38:24.502Z  info: Successfully LoggedIn
+2023-05-14T11:41:24.933Z  info: LogIn Called
+2023-05-14T11:44:11.755Z  info: Photo is added
+2023-05-14T11:44:42.087Z  info: Room is created
+2023-05-14T11:44:47.938Z  info: LogOut Called
+2023-05-14T11:46:47.395Z  info: LogIn Called
+2023-05-14T11:46:50.961Z  info: Successfully LoggedIn
+2023-05-14T11:47:49.664Z  info: Photo is added
+2023-05-14T11:49:39.636Z  info: Room is created
+2023-05-14T11:54:23.835Z  info: LogOut Called
+2023-05-14T11:54:46.358Z  info: LogIn Called
+2023-05-14T11:54:49.978Z  info: Successfully LoggedIn
+2023-05-14T11:56:19.187Z  info: Photo is added
+2023-05-14T11:56:37.819Z  info: Room is created
+2023-05-14T11:56:41.688Z  info: LogOut Called
